@@ -1,0 +1,17 @@
+
+project_id = "zumvhtmqbwxkcbhlqjyl"
+
+[api]
+# No custom API configuration needed
+
+[api.edge_functions]
+# Edge function-specific configuration
+
+[functions.delete-account]
+verify_jwt = true
+
+[functions.send-listing-notification]
+verify_jwt = false
+
+[functions.send-request-notification]
+verify_jwt = false

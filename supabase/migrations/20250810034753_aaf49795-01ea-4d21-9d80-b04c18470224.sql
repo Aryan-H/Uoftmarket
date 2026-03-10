@@ -1,0 +1,5 @@
+-- Create trigger for request notifications
+CREATE TRIGGER notify_new_request_trigger
+  AFTER INSERT ON public.requests
+  FOR EACH ROW
+  EXECUTE FUNCTION public.notify_new_request();
